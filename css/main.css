@@ -1,5 +1,68 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+header {
+  background-image: url("../img/imagenFondo.jpg");
+  height: 95px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: rgb(189, 229, 229);
+  text-align: center;
+}
+
+body {
+  height: 95%;
+}
+
+.descripcion{
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer {
+  text-decoration: none;
+  position: absolute;
+  margin-left: 48%;
+  bottom: 0;
+}
+
+/*Menu*/
+div ul{
+  text-align: center;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+li {
+  border: solid 1px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+div ul li{
+  display: inline-block;
+}
+
+div ul li a{
+  display: inline-block;
+  color: black;
+  padding: 0 80px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+div ul li a:hover{
+  color: #cdadf1;
+  background-color: rgb(16, 68, 158);
+  text-shadow: white 1px 1px;
+  transition: 0.3;
+}
+
+
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
