@@ -20,11 +20,29 @@ body {
   margin-top: 40px;
 }
 
+.tipoPagina {
+  color: #000;
+}
+
 footer {
   text-decoration: none;
   position: absolute;
   margin-left: 48%;
   bottom: 0;
+}
+
+/*Atributos html*/
+.red {
+  background-color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+.black {
+  background-color: black;
+  text-align: center;
+  font-size: 40px;
+  color: white;
 }
 
 /*Menu*/
