@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Verificar el formato del mensaje de commit
+commit_msg_file=$1
+commit_msg=$(cat $commit_msg_file)
+
+# Verifica que el mensaje de commit tenga dos partes separadas por dos puntos
+if [[ ! $commit_msg =~ ^[^:]+: ]]; then
+    echo "Error: El mensaje de commit debe tener un formato de 'MOTIVO: CONTENIDO'."
+    exit 1
+fi
+
+# Comprobar caracteres no-ASCII en los archivos a ser commiteados
+if git diff --cached --name-only --diff-filter=ACMRTUXB | xargs grep -P '[\x80-\xFF]' --files-with-matches; then
+    echo "Error: Se encontraron caracteres no-ASCII en los archivos a ser commiteados."
+    exit 1
+fi
