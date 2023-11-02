@@ -33,20 +33,28 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="contenidoHTML.html">Modificar contenido HTML</a></li>
-        <li><a href="contenidoCSS.html">Modificar contenido CSS</a></li>
+        <li><a href="#">Modificar contenido CSS</a></li>
         <li><a href="atributosHTML.html">Modificar atributos HTML</a> </li>  
     </ul>
   </div>
+
+  <div>
+    <h1 class="tipoPagina">Contenido HTML</h1>
+    <p id="demo" class="descripcion">Esta es la plantilla basica que a creado el tercer usuario</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Y ESTE ES EL CAMBIO'">Click Me!</button>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Esta es la plantilla basica que a creado el segundo usuario'">Volver!</button>
+  </div>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  
+
   <footer>
     <div >
       <a href="#">Copyright© de Sergi Casanova Enguix</a>
     </div>
   </footer>
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
